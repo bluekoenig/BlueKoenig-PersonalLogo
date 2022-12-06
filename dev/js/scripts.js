@@ -93,10 +93,9 @@ function plopPlop(){
 
     var tl = gsap.timeline({repeat:3});
 
-    gsap.fromTo(".firstDown",{duration:2, DrawSVGPlugin:"100%"});
+    gsap.from(".firstDown",{duration:2, DrawSVGPlugin:"100%"});
 
-    tl.from(".odd",{duration:2, drawSVG:0, stagger:0.25, rotate:180, transformOrigin:"center"},"spin")
-    .fromTo(".even",{drawSVG:"0% 0%"},{duration:2, drawSVG:"0% -100%", stagger:0.25, rotate:180, transformOrigin:"center"},"spin");
+   
     return tl;
 
 }
