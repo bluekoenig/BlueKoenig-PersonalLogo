@@ -41,7 +41,7 @@ function fishonaMish(){
           alignOrigin: [0.5, 0.5],
           start: .188,
           end: .45
-        }, scale:3}, "bigGuy")
+        }, scale:3, morphSVG:"#word-fish"})
         tl.to("#the-fishie",{
           motionPath:{
             path: "#fishpath",
@@ -63,7 +63,7 @@ function fishonaMish(){
               duration: 1
             }})
         
-     
+            gsap.to("#the-fishie", {duration: 1, morphSVG:"#hippo"});
 
     return tl;
 
