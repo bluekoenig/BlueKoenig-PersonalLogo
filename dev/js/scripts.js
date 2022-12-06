@@ -1,27 +1,27 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
+gsap.registerPlugin(MotionPathPlugin, GSDevTools)
+gsap.registerPlugin(ScrollTrigger, GSDevTools)
 
-function simpleMotion(){
+function fishonaMish(){
 
-      // make a var that represents the line in the SVG
-      var line = document.querySelector("#center-line");
-      // make a var that uses the svg line var from above and sets the BBox property
-      line = line.getBBox();
-      // print out the width of the line. This should make your Figma file
-      // console.log(line.width)
-  
-      var leftBall = document.querySelector("#left-ball");
-      leftBall = leftBall.getBBox();
-  
-      var center = document.querySelector("#center");
-      center = center.getBBox();
-      // console.log(center.height)
-
-      gsap.set("#left-ball",{x:line.width / 2 + leftBall.width / 2, transformOrigin:"center" })
-      gsap.set("#right-ball",{x:-line.width/2 - leftBall.width / 2, transformOrigin:"center" })
+  gsap.to("#the-fishie", {
+    duration: 5, 
+    repeat: 12,
+    repeatDelay: 3,
+    ease: "power1.inOut",
+    motionPath:{
+      path: "#fishpath",
+      align: "#fishpath",
+      autoRotate: true,
+      alignOrigin: [0.5, 0.5]
+    }
+  });
 
     var tl = gsap.timeline();
     tl.from("#right-ball",{scale:0, duration:0.25, drawSVG: 0})
@@ -73,7 +73,7 @@ function UIMotion(){
 
 
 var mainTL = gsap.timeline();
-mainTL.add(simpleMotion())
+mainTL.add(fishonaMish())
 .add(patternMotion())
 .add(UIMotion())
 

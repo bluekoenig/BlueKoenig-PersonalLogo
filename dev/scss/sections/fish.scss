@@ -1,42 +1,51 @@
 .fishieFixer{
    scale: 15%;
-    position: relative;
-    top: 100px;
-    left: 700px;
+   transform: scaleX(1);
+   transform: scaleY(-1);
+    // position: relative;
+    // top: 100px;
+    // left: 700px;
 }
 
 .firstDown{
     scale: 45%;
     position: relative;
     top: -600px;
-    left: 450px;
+    left: 502px;
 }
 
 .firstUp{
     scale: 45%;
     position: relative;
     top: -3680px;
-    left: 300px;
+    left: 350px;
 }
 
 .secondDown{
     scale: 45%;
     position: relative;
     top: -1625px;
-    left: -250px;
+    left: -330px;
 }
 
 .secondUp{
     scale: 45%;
     position: relative;
     top: -4710px;
-    left: -400px;
+    left: -480px;
 }
 
 .thirdDown{
     scale: 45%;
     position: relative;
     top: -2658px;
-    left: -750px;
+    left: -800px;
 }
 
+
+.secret-fish-path{
+    scale: 110%;
+    position: relative;
+    top: -5750px;
+    left: -70px;
+}
