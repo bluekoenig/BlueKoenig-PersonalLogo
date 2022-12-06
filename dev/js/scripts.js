@@ -14,25 +14,22 @@ function fishonaMish(){
     duration: 5, 
     repeat: 12,
     repeatDelay: 3,
-    ease: "power1.inOut",
-    motionPath:{
-      path: "#fishpath",
-      align: "#fishpath",
-      autoRotate: true,
-      alignOrigin: [0.5, 0.5]
-    }
+
+    
   });
 
     var tl = gsap.timeline();
-    tl.from("#right-ball",{scale:0, duration:0.25, drawSVG: 0})
-      .from("#left-ball",{scale:0, duration:0.25},"-=50%")
-      .to("#right-ball",{x:0, duration:0.25},"rollOut")
-      .to("#left-ball",{x:0, duration:0.25},"rollOut")
-      .fromTo("#center-line",{drawSVG:"50% 50%"},{duration:0.25, drawSVG: "0% 100%"},"rollOut")
-      .from("#center",{duration: 0.25, scale:0, transformOrigin:"center"},"-=50%")
-      .to("#center",{duration: 0.25, y: -center.height / 2 - 50},"-=50%")
-      .to("#center",{duration: 0.15, y: 0})
-      .fromTo("#center-outline",{drawSVG:"100% 50%"},{duration:0.15,drawSVG:"125% 25%"},"-=50%")
+    tl.to("#the-fishie",{
+      motionPath:{
+        path: "#fishpath",
+        align: "#fishpath",
+        autoRotate: true,
+        alignOrigin: [0.5, 0.5],
+        start: 0,
+        end: .17,
+        stagger: .5
+      }})
+     
 
     return tl;
 

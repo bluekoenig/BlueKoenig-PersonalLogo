@@ -1,7 +1,10 @@
 .fishieFixer{
    scale: 15%;
-   transform: scaleX(1);
-   transform: scaleY(-1);
+   transform: scaleX(-1);
+//    transform: scaleY(-1);
+   transform-origin: center center;
+   transform: scaleY(1);
+   rotate: 180deg;
     // position: relative;
     // top: 100px;
     // left: 700px;
@@ -48,4 +51,7 @@
     position: relative;
     top: -5750px;
     left: -70px;
+    stroke: none;
+    fill: none;
+    opacity: 0;
 }
