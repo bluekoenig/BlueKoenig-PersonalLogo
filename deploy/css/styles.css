@@ -420,3 +420,13 @@ textarea {
   fill: none;
   opacity: 0;
 }
+
+#word-fish {
+  visibility: hidden;
+  scale: 15%;
+}
+
+.fisk {
+  visibility: hidden;
+  scale: 15%;
+}
