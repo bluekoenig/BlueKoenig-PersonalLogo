@@ -393,26 +393,19 @@ textarea {
   scale: 45%;
   position: relative;
   top: -1625px;
-  left: -50px;
+  left: -250px;
 }
 
 .secondUp {
   scale: 45%;
   position: relative;
   top: -4710px;
-  left: -200px;
+  left: -400px;
 }
 
 .thirdDown {
   scale: 45%;
   position: relative;
   top: -2658px;
-  left: -560px;
-}
-
-.thirdUp {
-  scale: 45%;
-  position: relative;
-  top: -5740px;
-  left: -715px;
+  left: -750px;
 }
