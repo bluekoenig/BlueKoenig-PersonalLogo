@@ -1,23 +1,14 @@
 import { gsap } from "gsap";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import {DrawSVGPlugin} from "gsap/DrawSVGPlugin"
+import {MotionPathPlugin} from "gsap/MotionPathPlugin"
+import {MorphSVGPlugin} from "gsap/MorphSVGPlugin"
+import {GSDevTools} from "gsap/GSDevTools"
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
-
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
 
 function fishonaMish(){
-
-  gsap.to("#the-fishie", {
-    duration: 15, 
-    repeat: 12,
-    repeatDelay: 3
-
-    
-  });
 
     var tl = gsap.timeline();
     tl.to("#the-fishie",{
@@ -64,7 +55,7 @@ function fishonaMish(){
         
             tl.to("#the-fishie", {morphSVG:".fisk", duration:2}, "+=1");
 
-            tl.to("word-fish",{
+            tl.to("#word-fish",{
         
               motionPath:{
                 stagger:10,
@@ -80,7 +71,6 @@ function fishonaMish(){
                   path: "#fishpath",
                   align: "#fishpath",
                   autoRotate: true,
-                  alignOrigin: [0.5, 0.5],
                   start: .45,
                   end: .75,
                   duration: 1
@@ -91,9 +81,10 @@ function fishonaMish(){
 
 function plopPlop(){
 
-    var tl = gsap.timeline({repeat:3});
+    var tl = gsap.timeline();
 
-    gsap.from(".firstDown",{duration:2, DrawSVGPlugin:"100%"});
+    tl.from("#top-line",{drawSVG:"100%"},"-=50")
+    tl.from("#middle-line",{drawSVG:"100%"}, "-=50")
 
    
     return tl;

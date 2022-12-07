@@ -9,6 +9,16 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
+    "\/assets\/ACTUAL fish logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/ACTUAL fish logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/bare ass fish.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -34,6 +44,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/est.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/fish logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/fish logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
