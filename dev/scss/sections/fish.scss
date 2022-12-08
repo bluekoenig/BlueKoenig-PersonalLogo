@@ -1,13 +1,16 @@
 .fishieFixer{
    scale: 15%;
    transform: scaleX(-1);
-//    transform: scaleY(-1);
    transform-origin: center center;
-   transform: scaleY(1);
    rotate: 180deg;
     // position: relative;
     // top: 100px;
     // left: 700px;
+}
+
+.fishspinner{
+    transform: scaleX(-1);
+    rotate: 90deg;
 }
 
 .firstDown{
@@ -64,4 +67,8 @@
 .fisk{
     visibility: hidden;
     scale: 15%; 
+}
+
+.hider{
+    opacity: 0;
 }
