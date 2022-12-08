@@ -47,7 +47,7 @@ function fishMorph(){
   .to("#tStart", {duration:0.5, morphSVG:"#t", fill:"#00ADD4"}, "<25%")
   .to("#uStart", {duration:0.5, morphSVG:"#u", fill:"#00ADD4"}, "<25%")
   .to("#nStart", {duration:0.5, morphSVG:"#n", fill:"#00ADD4"}, "<25%")
-  .to("#tail", {duration:0.5, morphSVG:"#a", fill:"#00ADD4"}, "<25%")
+  .to("#tail", {duration:0.75, morphSVG:"#a", fill:"#00ADD4"}, "<25%")
   return tl;
 }
 
