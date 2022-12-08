@@ -369,9 +369,17 @@ textarea {
     Footer
 ============= */
 .the-clips {
-  clip-path: inset(75px 0px 50px 0px);
+  clip-path: inset(225px 0px 50px 0px);
 }
 
 .the-clips2 {
-  clip-path: inset(150px 0px 15px 0px);
+  clip-path: inset(150px 0px 0px 0px);
+}
+
+.the-clips3 {
+  clip-path: inset(0px 0px 0px 0px);
+}
+
+.noSee {
+  opacity: 0;
 }
