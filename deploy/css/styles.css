@@ -368,18 +368,73 @@ textarea {
 /* =============
     Footer
 ============= */
-.the-clips {
-  clip-path: inset(225px 0px 50px 0px);
+.fishieFixer {
+  scale: 15%;
+  transform: scaleX(-1);
+  transform-origin: center center;
+  rotate: 180deg;
 }
 
-.the-clips2 {
-  clip-path: inset(150px 0px 0px 0px);
+.fishspinner {
+  transform: scaleX(-1);
+  rotate: 90deg;
 }
 
-.the-clips3 {
-  clip-path: inset(0px 0px 0px 0px);
+.firstDown {
+  scale: 45%;
+  position: relative;
+  top: -600px;
+  left: 502px;
 }
 
-.noSee {
+.firstUp {
+  scale: 45%;
+  position: relative;
+  top: -3680px;
+  left: 350px;
+}
+
+.secondDown {
+  scale: 45%;
+  position: relative;
+  top: -1625px;
+  left: -330px;
+}
+
+.secondUp {
+  scale: 45%;
+  position: relative;
+  top: -4710px;
+  left: -480px;
+}
+
+.thirdDown {
+  scale: 45%;
+  position: relative;
+  top: -2658px;
+  left: -800px;
+}
+
+.secret-fish-path {
+  scale: 110%;
+  position: relative;
+  top: -5750px;
+  left: -70px;
+  stroke: none;
+  fill: none;
+  opacity: 0;
+}
+
+#word-fish {
+  visibility: hidden;
+  scale: 15%;
+}
+
+.fisk {
+  visibility: hidden;
+  scale: 15%;
+}
+
+.hider {
   opacity: 0;
 }
