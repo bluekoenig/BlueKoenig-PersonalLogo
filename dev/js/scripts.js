@@ -53,7 +53,7 @@ function fishMorph(){
 
 function fishOut(){
   var tl = gsap.timeline();
-  tl.to("#bareAssFish", {duration:2.25, motionPath:{path:"#fishPath", align:"#fishPath", offsetX:-165, offsetY:-150, autoRotate:true, start:0.44, end:1}})
+  tl.to("#bareAssFish", {duration:2.25, motionPath:{path:"#fishPath", align:"#fishPath", offsetX:100, offsetY:70, autoRotate:true, start:0.44, end:1}})
   return tl;
 }
 
@@ -78,3 +78,6 @@ mainTL.add(fishLinesRight(), "<5%")
 mainTL.add(fishMorph())
 mainTL.add(fishOut())
 mainTL.add(fishLinesLeft(), "<5%")
+
+
+GSDevTools.create();
